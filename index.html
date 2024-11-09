@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quotes App</title>
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon" />
+    <meta name="author" content="Aya Sayed" />
+
+    <!--======== Font Family Links ===========  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ======== Icons Css Files =========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-icons.min.css" />
+
+    <!-- ======== Bootstrap Css Files =========== -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+
+    <!-- ======== Custom Css Files =========== -->
+     <link rel="stylesheet" href="./css/animation.css">
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- ======== Loader ======== -->
+    <div class="loader" role="status"></div>
+
+    <!-- ======== Home Section =========== -->
+    <header>
+      <section class="home">
+        <div
+          class="container min-vh-100 d-flex justify-content-center align-items-center text-white"
+        >
+          <div class="home-content">
+            <div class="title text-center">
+              <h1 class="text-capitalize mb-2">quote of the day</h1>
+              <p>Press the button below to receive a random quote!</p>
+            </div>
+
+            <div
+              class="quote w-50 mx-auto bg-white bg-opacity-25 p-5 rounded-2 mt-5 text-center text-muted"
+            >
+              <blockquote class="blockquote">
+                <p id="quote">
+                  “Two things are infinite: the universe and human stupidity;
+                  and I'm not sure about the universe.”
+                </p>
+              </blockquote>
+              <p class="blockquote-footer text-white mt-1" id="quoteAuthor">Marilyn Monroe</p>
+              <button class="btn btn-light rounded-pill px-3 py-2 mt-3 text-capitalize" onclick="generateQuote()">new quote</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- ======== Bootstrap Js Files =========== -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+    <!-- ======== Custom Css Files =========== -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
